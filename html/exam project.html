@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+<!-- Entire page is one table -->
+<table border="1" width="100%" cellspacing="0" cellpadding="8">
+  <!-- Header -->
+  <tr>
+    <td colspan="2" align="center">
+      <h1 class="John Doe's web portofolio"> John Doe's Web Portfolio</h1>
+      <p>Showcasing HTML skills using a single table</p>
+      <!-- Simple nav -->
+      <p>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#contact">Contact</a>
+      </p>
+    </td>
+  </tr>
+
+  <!-- About row (2 columns) -->
+  <tr id="about">
+    <td >
+      <h2 class="About Me"> About Me</h2>
+      <p>Hello!  John Doe, a passionate web developer. I love building semantic, accessible, and responsive
+         websites using core web technologies.</p>
+      <p>I specialize in front-end development, especially HTML, CSS, and JavaScript.</p>
+    </td>
+    <td align="right" valign="top">
+      <strong>John Doe</strong><br>
+      <em>Web Developer</em>
+    </td>
+  </tr>
+
+  <!-- Skills (left) and Projects (right) -->
+  <tr>
+    <td id="skills" valign="top">
+      <h2> Skills</h2>
+      <ul>
+        <li>HTML5 &amp; CSS</li>
+        <li>Responsive Design</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+
+      <h3>Skill Levels</h3>
+      <!-- No nested table; list only -->
+      <ul>
+        <li><strong>HTML:</strong> Advanced</li>
+        <li><strong>CSS:</strong> Intermediate</li>
+        <li><strong>JavaScript:</strong> Intermediate</li>
+        <li><strong>Design:</strong> Beginner</li>
+      </ul>
+    </td>
+
+    <td id="projects" valign="top">
+      <h2>Projects</h2>
+      <ol>
+        <li><strong>Portfolio Website</strong> — My personal portfolio built using pure HTML and forms.</li>
+        <li><strong>To-Do App</strong> — A simple task manager (HTML + basic JS).</li>
+        <li><strong>Weather App</strong> — A mini weather dashboard using APIs.</li>
+      </ol>
+
+      <h3>Screenshot</h3>
+      <!-- Placeholder image path; replace with your own file if available -->
+      <img src="project-preview.png" alt="Project Preview" width="260" height="150">
+    </td>
+  </tr>
+
+  <!-- Contact form -->
+  <tr id="contact">
+    <td colspan="2" valign="top">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          Gender:
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        </p>
+
+        <p>
+          Service Interested:
+          <label><input type="checkbox" name="service_web" value="Web Design"> Web Design</label>
+          <label><input type="checkbox" name="service_seo" value="SEO"> SEO</label>
+        </p>
+
+        <p>
+          <label for="country">Country:</label><br>
+          <select id="country" name="country">
+            <option>USA</option>
+            <option>India</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Australia</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </p>
+      </form>
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr>
+    <td colspan="2" align="center">
+      <p>Last Updated: August 13, 2025</p>
+      <p>Created by <strong>John Doe</strong> — <a href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+      <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

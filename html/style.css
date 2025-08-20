@@ -1,0 +1,15 @@
+#w{
+    color: aqua;
+}
+nav{
+    color:yellow;
+}
+a{
+    color:orange;
+}
+p.common{
+    color: brown;
+}
+p,a{
+    color:red;
+}
